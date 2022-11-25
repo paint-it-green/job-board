@@ -2,7 +2,10 @@
 import { ref } from 'vue'
 import { useSignUpEmailPassword } from '@nhost/vue'
 import { useRouter } from 'vue-router'
+import { useToast } from 'vue-toastification'
 
+const toast = useToast()
+const router = useRouter()
 const { signUpEmailPassword } = useSignUpEmailPassword()
 const firstName = ref('')
 const lastName = ref('')
@@ -13,11 +16,15 @@ const handleSubmit = async (event: Event) => {
   event.preventDefault()
   const { isError, error } = await signUpEmailPassword(email, password, {
     metadata: { firstName, lastName },
-    redirectTo: '/sign-in',
   })
 
-  if (isError)
-    console.log(error)
+  if (isError) {
+    toast.error(error?.message)
+    return
+  }
+
+  toast.success('Successfully registered!')
+  router.push('/sign-in')
 }
 </script>
 
