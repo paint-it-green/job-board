@@ -14,7 +14,7 @@ const password = ref('')
 const handleSubmit = async (event: Event) => {
   event.preventDefault()
   const { error, isError, needsEmailVerification } = await signInEmailPassword(email, password)
-    console.log({error, isError, needsEmailVerification})
+
   if (isError) {
     toast.error(error?.message)
     return
