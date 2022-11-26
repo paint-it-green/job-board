@@ -19,7 +19,8 @@
     "graphql": "^15.8.0",
     "graphql-tag": "^2.12.6",
     "vue": "^3.2.33",
-    "vue-router": "^4.0.15"
+    "vue-router": "^4.0.15",
+    "vue-toastification": "^2.0.0-rc.5"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.23.0",
