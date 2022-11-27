@@ -19,7 +19,7 @@ const handleSubmit = async (event: Event) => {
   })
 
   if (isError) {
-    toast.error(error?.message)
+    toast.error(error!.message)
     return
   }
 
