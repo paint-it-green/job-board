@@ -1,8 +1,8 @@
-import { gql } from '@apollo/client/core';
-import { useQuery } from '@vue/apollo-composable';
+import { gql } from '@apollo/client/core'
+import { useQuery } from '@vue/apollo-composable'
 
 export const getJobPostings = () => {
-    const GET_JOB_POSTINGS = gql`
+  const GET_JOB_POSTINGS = gql`
     query GetJobPosting {
         jobs {
           apply_now_link
@@ -38,8 +38,8 @@ export const getJobPostings = () => {
           id
           name
         }
-      }`;
+      }`
 
-    const query = useQuery(GET_JOB_POSTINGS);
-    return query;
-};
+  const query = useQuery(GET_JOB_POSTINGS)
+  return query
+}
