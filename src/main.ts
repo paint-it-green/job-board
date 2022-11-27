@@ -13,6 +13,8 @@ import '@unocss/reset/tailwind.css'
 import './styles/main.css'
 import 'uno.css'
 import 'vue-toastification/dist/index.css'
+import ElementPlus from "element-plus"
+import "element-plus/theme-chalk/index.css"
 
 const nhost = new NhostClient({
   subdomain: import.meta.env.VITE_NHOST_SUBDOMAIN,
@@ -48,5 +50,6 @@ const options: PluginOptions = {
   icon: true,
   rtl: false
 }
+app.use(ElementPlus)
 app.use(Toast, options)
 app.mount('#app')
