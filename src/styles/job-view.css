@@ -85,3 +85,11 @@
     border-radius: 10px;
     padding: 5px;
 }
+
+.job-view .info .apply-now {
+    border: 1px solid #000;
+    min-height: 50px;
+    width: 90%;
+    border-radius: 10px;
+    padding: 5px;
+}

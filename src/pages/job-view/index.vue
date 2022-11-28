@@ -102,6 +102,23 @@ watch(() => {
                     </span>
                     <span>{{ baseUrl }}</span>
                 </div>
+                <div v-if="job.apply_now_link !== null || job.apply_now_via_email !== null"
+                    class="apply-now flex flex-col cursor-pointer">
+                    <span class="title">
+                        <b>Apply Now:</b>
+                    </span>
+
+                    <el-link v-if="job.apply_now_link !== null" :href="job.apply_now_link" target="_blank">
+                        {{ job.apply_now_link }}
+                    </el-link>
+
+                    <div v-if="job.apply_now_via_email !== null" class="email mt-5 flex flex-col">
+                        <span class="title">
+                            Apply via E-mail:
+                        </span>
+                        <span>{{ job.apply_now_via_email }}</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
