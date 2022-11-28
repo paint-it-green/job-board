@@ -45,13 +45,13 @@ watch(() => {
                     <div class="categories mb-3">
                         <span class="mb-2"><b> Categories: </b></span>
                         <div v-for="category in job_categories" class="category">
-                            <span> {{ category.category_details.name }}</span>
+                            <span> {{ category.category.name }}</span>
                         </div>
                     </div>
                     <div class="tags">
                         <span class="mb-2"> <b> Tags: </b></span>
                         <div v-for="tag in job_tags" class="tag">
-                            <span> {{ tag.tag_details.name }} </span>
+                            <span> {{ tag.tag.name }} </span>
                         </div>
                     </div>
 
@@ -67,31 +67,31 @@ watch(() => {
                     <div class="employer flex flex-col">
                         <span>
                             <b>Employer:</b>
-                            {{ job.employerDetails.name }}
+                            {{ job.employer.name }}
                         </span>
                         <span>
                             <b>Address:</b>
-                            {{ job.employerDetails.company_background }}
+                            {{ job.employer.company_background }}
                         </span>
                         <span>
                             <b>Company Background:</b>
-                            {{ job.employerDetails.address }}
+                            {{ job.employer.address }}
                         </span>
                     </div>
                 </div>
-                <div class="social-media-links flex flex-col">
+                <div v-if="job.employer.social_media_links" class="social-media-links flex flex-col">
                     <span class="title">
                         Social Media Links:
                     </span>
 
                     <div class="socail-media-icons flex flex-row justify-center">
-                        <el-link :href="job.employerDetails.social_media_links_detials.facebook" target="_blank">
+                         <el-link :href="job.employer.social_media_links.facebook" target="_blank">
                             <img class="mx-1" src=".././images/facebook.webp" alt="facebook">
                         </el-link>
-                        <el-link :href="job.employerDetails.social_media_links_detials.twitter" target="_blank">
+                        <el-link :href="job.employer.social_media_links.twitter" target="_blank">
                             <img class="mx-1" src=".././images/twitter.webp" alt="twitter">
                         </el-link>
-                        <el-link :href="job.employerDetails.social_media_links_detials.facebook" target="_blank">
+                        <el-link :href="job.employer.social_media_links.facebook" target="_blank">
                             <img class="mx-1" src=".././images/linkedin.png" alt="linkedin">
                         </el-link>
                     </div>

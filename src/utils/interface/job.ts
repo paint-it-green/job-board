@@ -13,6 +13,6 @@ export interface Job {
     salary_currency: string
     salary_type: SalaryType
     salary_amount: string
-    employerDetails: EmployerDetails
+    employer: EmployerDetails
   }
   

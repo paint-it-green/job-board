@@ -16,12 +16,12 @@ export const getJob = (jobId: number) => {
           title
           updated_at
           salary_amount
-          employerDetails {
+          employer {
             name
             id
             company_background
             address
-            social_media_links_detials {
+            social_media_links {
               facebook
               linkedin
               twitter
@@ -33,7 +33,7 @@ export const getJob = (jobId: number) => {
           job_id
           id
           category_id
-          category_details {
+          category {
             id
             name
           }
@@ -42,7 +42,7 @@ export const getJob = (jobId: number) => {
           id
           job_id
           tag_id
-          tag_details {
+          tag {
             id
             name
           }

@@ -7,5 +7,5 @@ export interface EmployerDetails {
     address: string
     created_at: string
     updated_at: string
-    social_media_links_detials: SocialMediaLinks
+    social_media_links: SocialMediaLinks
 }
