@@ -16,7 +16,7 @@
 }
 
 .job-view .info {
-    background-color: #ffffff;
+    background-color: transparent;
     min-height: 500px;
     flex: 1 25%;
     display: flex;
@@ -26,6 +26,7 @@
 }
 
 .job-view .info .job-details {
+    background-color: #ffffff;
     border: 1px solid #000;
     min-height: 300px;
     width: 90%;
@@ -72,6 +73,7 @@
     border-radius: 10px;
     margin-bottom: 10px;
     padding: 5px;
+    background-color: #ffffff;
 }
 
 .job-view .info .social-media-links .socail-media-icons img {
@@ -85,6 +87,7 @@
     width: 90%;
     border-radius: 10px;
     padding: 5px;
+    background-color: #ffffff;
 }
 
 .job-view .info .apply-now {
@@ -93,4 +96,5 @@
     width: 90%;
     border-radius: 10px;
     padding: 5px;
+    background-color: #ffffff;
 }
