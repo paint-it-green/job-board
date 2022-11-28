@@ -24,7 +24,7 @@ const handleSubmit = async (event: Event) => {
   }
 
   toast.success('Successfully registered!')
-  router.push('/sign-in')
+  router.push('/sign-up/employer')
 }
 </script>
 
