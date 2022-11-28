@@ -1,0 +1,87 @@
+.job-view {
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.job-view .description {
+    border: 1px solid #000;
+    background-color: #ffffff;
+    min-height: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 75%;
+    margin-right: 40px;
+}
+
+.job-view .info {
+    background-color: #ffffff;
+    min-height: 500px;
+    flex: 1 25%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.job-view .info .job-details {
+    border: 1px solid #000;
+    min-height: 300px;
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.job-view .info .categories {
+    text-align: left;
+}
+
+.job-view .info .tags {
+    text-align: left;
+}
+
+.job-view .info .salary {
+    text-align: left;
+}
+
+
+.job-view .info .employer {
+    text-align: left;
+}
+
+
+.job-view .info .categories .category span {
+    padding: 4px;
+    border-radius: 4px;
+    background-color: rgba(164, 164, 164, 0.567);
+}
+
+.job-view .info .tags .tag span {
+    padding: 4px;
+    border-radius: 4px;
+    background-color: rgba(252, 211, 153, 0.567);
+}
+
+
+.job-view .info .social-media-links {
+    border: 1px solid #000;
+    min-height: 50px;
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.job-view .info .social-media-links .socail-media-icons img {
+    height: 50px;
+    width: auto;
+}
+
+.job-view .info .base-url {
+    border: 1px solid #000;
+    min-height: 50px;
+    width: 90%;
+    border-radius: 10px;
+    padding: 5px;
+}
